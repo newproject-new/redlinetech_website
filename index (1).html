@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Redline Tech — Digital products and revenue systems engineered for businesses and enterprises. Websites, apps, SEO, copywriting, and growth marketing." />
+  <meta property="og:title" content="Redline Tech | Digital Infrastructure for Revenue Growth" />
+  <meta property="og:description" content="We engineer websites, apps, and marketing systems that turn traffic into revenue. Trusted by startups to enterprise." />
+  <meta property="og:type" content="website" />
+  <title>Redline Tech — Digital Infrastructure for Revenue Growth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cur-dot" id="curDot"></div>
+  <div class="cur-ring" id="curRing"></div>
+
+  <!-- ═══════ NAVIGATION ═══════ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#" class="wordmark" aria-label="Redline Tech home">
+        <svg class="wm-icon" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="28" height="28" rx="6" fill="#C41230"/>
+          <path d="M7 8h8a4 4 0 010 8H7V8zM7 16h6l5 4H7v-4z" fill="#fff"/>
+        </svg>
+        <span>Redline<strong>Tech</strong></span>
+      </a>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="#services" class="nav-item">Services</a>
+        <a href="#work" class="nav-item">Work</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#results" class="nav-item">Results</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="hdr-cta">
+          <span>Start a Project</span>
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MOBILE DRAWER -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <nav class="drawer-nav">
+        <a href="#services" class="drawer-link">Services</a>
+        <a href="#work" class="drawer-link">Work</a>
+        <a href="#about" class="drawer-link">About</a>
+        <a href="#results" class="drawer-link">Results</a>
+        <a href="#contact" class="drawer-link">Contact</a>
+      </nav>
+      <a href="#contact" class="hdr-cta drawer-cta">Start a Project →</a>
+      <div class="drawer-meta">
+        <span>hello@redlinetech.io</span>
+        <span>© 2025 Redline Tech</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" id="home">
+
+    <!-- background elements -->
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+    <div class="hero-slash" aria-hidden="true"></div>
+
+    <div class="hero-body">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-pill">
+          <span class="live-dot"></span>
+          Accepting New Engagements
+        </span>
+      </div>
+
+      <h1 class="hero-h1">
+        <span class="h1-serif" data-reveal>Digital Products</span>
+        <span class="h1-rule" aria-hidden="true"></span>
+        <span class="h1-sans" data-reveal>Built to Generate</span>
+        <span class="h1-accent" data-reveal>Revenue.</span>
+      </h1>
+
+      <p class="hero-lead" data-reveal>
+        Redline Tech engineers websites, mobile apps, and marketing systems
+        for businesses that refuse to be invisible. Every pixel, every word,
+        every line of code — optimised for one outcome: <em>your growth.</em>
+      </p>
+
+      <div class="hero-actions" data-reveal>
+        <a href="#contact" class="btn-primary">
+          Start Your Project
+          <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#work" class="btn-outline">View Our Work</a>
+      </div>
+
+      <div class="hero-proof" data-reveal>
+        <div class="proof-stat">
+          <span class="ps-num" data-count="200">0</span><span class="ps-unit">+</span>
+          <span class="ps-label">Projects Delivered</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-stat">
+          <span class="ps-num" data-count="98">0</span><span class="ps-unit">%</span>
+          <span class="ps-label">Client Retention Rate</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-stat">
+          <span class="ps-prefix">$</span><span class="ps-num" data-count="50">0</span><span class="ps-unit">M+</span>
+          <span class="ps-label">Revenue Driven for Clients</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- floating client logos strip -->
+    <div class="hero-clients" aria-label="Trusted by">
+      <span class="clients-label">Trusted by</span>
+      <div class="clients-logos">
+        <span class="client-name">TradeBridge</span>
+        <span class="c-dot">·</span>
+        <span class="client-name">Nuriva Health</span>
+        <span class="c-dot">·</span>
+        <span class="client-name">Vertex Financial</span>
+        <span class="c-dot">·</span>
+        <span class="client-name">GovTrack</span>
+        <span class="c-dot">·</span>
+        <span class="client-name">FleetWave</span>
+        <span class="c-dot">·</span>
+        <span class="client-name">AgriLink</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ SERVICES TICKER ═══════ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Web Development</span><span class="t-sep">—</span>
+      <span>Mobile Apps</span><span class="t-sep">—</span>
+      <span>Conversion Copywriting</span><span class="t-sep">—</span>
+      <span>Enterprise Software</span><span class="t-sep">—</span>
+      <span>SEO &amp; Visibility</span><span class="t-sep">—</span>
+      <span>Sales Funnels</span><span class="t-sep">—</span>
+      <span>Brand Identity</span><span class="t-sep">—</span>
+      <span>E-Commerce</span><span class="t-sep">—</span>
+      <span>UI / UX Design</span><span class="t-sep">—</span>
+      <span>Digital Marketing</span><span class="t-sep">—</span>
+      <!-- duplicate -->
+      <span>Web Development</span><span class="t-sep">—</span>
+      <span>Mobile Apps</span><span class="t-sep">—</span>
+      <span>Conversion Copywriting</span><span class="t-sep">—</span>
+      <span>Enterprise Software</span><span class="t-sep">—</span>
+      <span>SEO &amp; Visibility</span><span class="t-sep">—</span>
+      <span>Sales Funnels</span><span class="t-sep">—</span>
+      <span>Brand Identity</span><span class="t-sep">—</span>
+      <span>E-Commerce</span><span class="t-sep">—</span>
+      <span>UI / UX Design</span><span class="t-sep">—</span>
+      <span>Digital Marketing</span><span class="t-sep">—</span>
+    </div>
+  </div>
+
+  <!-- ═══════ PROBLEM / OPPORTUNITY ═══════ -->
+  <section class="section problem-section" id="problem">
+    <div class="container">
+      <div class="problem-layout">
+        <div class="problem-left">
+          <p class="overline">The Cost of Inaction</p>
+          <h2 class="section-h2">
+            Every day without the right digital infrastructure is revenue
+            <em> you are actively losing.</em>
+          </h2>
+        </div>
+        <div class="problem-right">
+          <div class="problem-items">
+            <div class="pi-row">
+              <span class="pi-idx">01</span>
+              <div class="pi-body">
+                <strong>Traffic that never converts</strong>
+                <p>You have visitors. You have no system to capture, nurture, or close them.</p>
+              </div>
+              <span class="pi-cross" aria-hidden="true">✕</span>
+            </div>
+            <div class="pi-row">
+              <span class="pi-idx">02</span>
+              <div class="pi-body">
+                <strong>Invisible on every search engine</strong>
+                <p>Competitors rank. You don't. That gap compounds every single day.</p>
+              </div>
+              <span class="pi-cross" aria-hidden="true">✕</span>
+            </div>
+            <div class="pi-row">
+              <span class="pi-idx">03</span>
+              <div class="pi-body">
+                <strong>Marketing spend with no attribution</strong>
+                <p>Money leaves your account. Results don't arrive. Nobody knows why.</p>
+              </div>
+              <span class="pi-cross" aria-hidden="true">✕</span>
+            </div>
+            <div class="pi-row">
+              <span class="pi-idx">04</span>
+              <div class="pi-body">
+                <strong>Disjointed tools and broken workflows</strong>
+                <p>Siloed platforms that don't communicate — costing your team hours daily.</p>
+              </div>
+              <span class="pi-cross" aria-hidden="true">✕</span>
+            </div>
+          </div>
+          <div class="problem-resolution">
+            <div class="resolution-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#C41230" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p>Redline Tech builds the systems that replace all of the above — purpose-built for your revenue goals, not for a portfolio screenshot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ SERVICES ═══════ -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <p class="overline">Our Services</p>
+          <h2 class="section-h2">Every engagement,<br/>engineered for ROI.</h2>
+        </div>
+        <p class="section-intro-text">We don't offer generic packages. We map every service to a specific business outcome — then build, measure, and optimise until you hit it.</p>
+      </div>
+
+      <div class="services-list">
+
+        <div class="service-row" data-idx="01">
+          <div class="sr-number">01</div>
+          <div class="sr-name">
+            <h3>High-Converting Websites</h3>
+          </div>
+          <div class="sr-desc">
+            <p>Custom-built, conversion-architected websites where every design decision and every word is tied to measurable sales outcomes. Not portfolios — revenue machines.</p>
+            <ul class="sr-tags">
+              <li>Custom Design &amp; Dev</li>
+              <li>Conversion Copywriting</li>
+              <li>SEO-Ready Architecture</li>
+              <li>Performance Optimised</li>
+            </ul>
+          </div>
+          <a href="#contact" class="sr-cta" aria-label="Enquire about website development">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+
+        <div class="service-row" data-idx="02">
+          <div class="sr-number">02</div>
+          <div class="sr-name">
+            <h3>Mobile App Development</h3>
+          </div>
+          <div class="sr-desc">
+            <p>iOS, Android, and cross-platform apps built to retain users and generate recurring revenue. Backed by bulletproof backend architecture and growth loops designed in from day one.</p>
+            <ul class="sr-tags">
+              <li>iOS &amp; Android Native</li>
+              <li>React Native / Flutter</li>
+              <li>Backend &amp; API</li>
+              <li>App Store Optimisation</li>
+            </ul>
+          </div>
+          <a href="#contact" class="sr-cta" aria-label="Enquire about app development">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+
+        <div class="service-row featured-service" data-idx="03">
+          <div class="sr-number">03</div>
+          <div class="sr-name">
+            <h3>Sales Funnels &amp; Copywriting</h3>
+            <span class="sr-badge">Highest ROI</span>
+          </div>
+          <div class="sr-desc">
+            <p>Full-funnel architecture — from ad creative to landing page to close. Our in-house copywriters write words that sell, backed by direct-response principles refined across hundreds of campaigns.</p>
+            <ul class="sr-tags">
+              <li>Funnel Architecture</li>
+              <li>Direct-Response Copy</li>
+              <li>Email Sequences</li>
+              <li>VSL Scripts</li>
+            </ul>
+          </div>
+          <a href="#contact" class="sr-cta" aria-label="Enquire about copywriting and funnels">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+
+        <div class="service-row" data-idx="04">
+          <div class="sr-number">04</div>
+          <div class="sr-name">
+            <h3>SEO &amp; Digital Visibility</h3>
+          </div>
+          <div class="sr-desc">
+            <p>Compound organic growth that makes your business the obvious choice when customers search. Technical SEO, content strategy, and authority building — no shortcuts, no penalties.</p>
+            <ul class="sr-tags">
+              <li>Technical SEO</li>
+              <li>Keyword Strategy</li>
+              <li>Link Building</li>
+              <li>Content Architecture</li>
+            </ul>
+          </div>
+          <a href="#contact" class="sr-cta" aria-label="Enquire about SEO">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+
+        <div class="service-row" data-idx="05">
+          <div class="sr-number">05</div>
+          <div class="sr-name">
+            <h3>Enterprise Software</h3>
+          </div>
+          <div class="sr-desc">
+            <p>Custom CRMs, SaaS platforms, internal tools, and dashboards built to eliminate the bottlenecks that silently cost enterprises millions. Scalable, secure, and built to last.</p>
+            <ul class="sr-tags">
+              <li>Custom CRM / ERP</li>
+              <li>SaaS Development</li>
+              <li>API Integrations</li>
+              <li>Cloud Infrastructure</li>
+            </ul>
+          </div>
+          <a href="#contact" class="sr-cta" aria-label="Enquire about enterprise software">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+
+        <div class="service-row" data-idx="06">
+          <div class="sr-number">06</div>
+          <div class="sr-name">
+            <h3>Brand Identity &amp; Strategy</h3>
+          </div>
+          <div class="sr-desc">
+            <p>Before a customer buys from you, they buy into you. We create brand identities so coherent and compelling that your name becomes the reason clients choose you over every competitor.</p>
+            <ul class="sr-tags">
+              <li>Logo &amp; Visual System</li>
+              <li>Brand Voice</li>
+              <li>Positioning Strategy</li>
+              <li>Full Brand Guidelines</li>
+            </ul>
+          </div>
+          <a href="#contact" class="sr-cta" aria-label="Enquire about branding">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PORTFOLIO / WORK ═══════ -->
+  <section class="section work-section" id="work">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <p class="overline">Selected Work</p>
+          <h2 class="section-h2">Proof, not promises.</h2>
+        </div>
+        <div class="work-filters" role="tablist">
+          <button class="wf-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="wf-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+          <button class="wf-btn" data-filter="app" role="tab" aria-selected="false">Apps</button>
+          <button class="wf-btn" data-filter="marketing" role="tab" aria-selected="false">Marketing</button>
+          <button class="wf-btn" data-filter="enterprise" role="tab" aria-selected="false">Enterprise</button>
+        </div>
+      </div>
+
+      <!-- FEATURED -->
+      <div class="work-featured" data-category="web">
+        <div class="wf-screen">
+          <div class="screen-chrome">
+            <div class="sc-dots"><i></i><i></i><i></i></div>
+            <div class="sc-bar">tradebridge.africa</div>
+            <div class="sc-live"><span></span>Live</div>
+          </div>
+          <div class="sc-content tb">
+            <div class="sc-nav"><div class="scn-logo"></div><div class="scn-links"><i></i><i></i><i></i></div><div class="scn-btn"></div></div>
+            <div class="sc-hero-block">
+              <div class="sch-tag"></div>
+              <div class="sch-h1"></div>
+              <div class="sch-h1 w70"></div>
+              <div class="sch-p"></div>
+              <div class="sch-p w55"></div>
+              <div class="sch-cta"><div class="sch-btn red"></div><div class="sch-btn ghost"></div></div>
+            </div>
+            <div class="sc-stats-row">
+              <div class="scs-box"><div class="scs-n red"></div><div class="scs-l"></div></div>
+              <div class="scs-box"><div class="scs-n"></div><div class="scs-l"></div></div>
+              <div class="scs-box"><div class="scs-n red"></div><div class="scs-l"></div></div>
+              <div class="scs-box"><div class="scs-n"></div><div class="scs-l"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="wf-meta">
+          <div class="wfm-tags">
+            <span class="wfm-tag web">Web Development</span>
+            <span class="wfm-tag">Copywriting</span>
+            <span class="wfm-tag">SEO</span>
+          </div>
+          <h3>TradeBridge Africa</h3>
+          <p>A cross-border trade finance platform haemorrhaging leads through a 0.8% converting website. We rebuilt their entire digital foundation — new architecture, direct-response copy, and a 7-step nurture funnel. Revenue tripled in 90 days.</p>
+          <div class="wfm-metrics">
+            <div class="wfm-m"><strong>+340%</strong><span>Conversion Rate</span></div>
+            <div class="wfm-m"><strong>$140K</strong><span>Monthly Revenue (was $40K)</span></div>
+            <div class="wfm-m"><strong>–68%</strong><span>Cost Per Lead</span></div>
+          </div>
+          <div class="wfm-tech">
+            <span>Next.js</span><span>Figma</span><span>Mailchimp</span><span>GA4</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRID -->
+      <div class="work-grid">
+
+        <article class="work-card" data-category="app">
+          <div class="wc-visual app-visual">
+            <div class="phone-ui">
+              <div class="pui-top"><div class="pui-ava"></div><div class="pui-txt"><i></i><i class="s"></i></div></div>
+              <div class="pui-card blue"><div class="pui-cn"></div><div class="pui-cv"></div></div>
+              <div class="pui-rows"><div class="pui-row"><div class="pui-ri blue-r"></div><div class="pui-rt"><i></i><i class="s"></i></div></div><div class="pui-row"><div class="pui-ri blue-r"></div><div class="pui-rt"><i></i><i class="s"></i></div></div></div>
+              <div class="pui-tabs"><i class="at"></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="wc-body">
+            <div class="wc-tags"><span class="wfm-tag app">Mobile App</span><span class="wfm-tag">iOS + Android</span></div>
+            <h4>Nuriva Health</h4>
+            <p>Telehealth booking platform. 10,000 downloads in month one. HIPAA-compliant, real-time video consultations.</p>
+            <div class="wc-kpis">
+              <span><strong>10K+</strong> Downloads</span>
+              <span><strong>4.8★</strong> App Store</span>
+              <span><strong>6 wks</strong> to Launch</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="marketing">
+          <div class="wc-visual funnel-visual">
+            <div class="fv-inner">
+              <div class="fv-row r1"><span class="fvr-l">Ad Traffic</span><span class="fvr-v">48,200</span></div>
+              <div class="fv-arr">↓</div>
+              <div class="fv-row r2"><span class="fvr-l">Leads Captured</span><span class="fvr-v">11,400</span></div>
+              <div class="fv-arr">↓</div>
+              <div class="fv-row r3"><span class="fvr-l">Sales Calls</span><span class="fvr-v">3,280</span></div>
+              <div class="fv-arr">↓</div>
+              <div class="fv-row r4 red-row"><span class="fvr-l">Closed Revenue</span><span class="fvr-v">$920K</span></div>
+            </div>
+          </div>
+          <div class="wc-body">
+            <div class="wc-tags"><span class="wfm-tag marketing">Sales Funnel</span><span class="wfm-tag">Copywriting</span></div>
+            <h4>Vertex Financial</h4>
+            <p>One rebuilt funnel — new landing page, VSL, and 9-email sequence — generated $920K in 60 days from the same ad budget.</p>
+            <div class="wc-kpis">
+              <span><strong>$920K</strong> Revenue</span>
+              <span><strong>51× ROI</strong> on Ad Spend</span>
+              <span><strong>23.6%</strong> Conversion</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="web">
+          <div class="wc-visual ecom-visual">
+            <div class="ev-browser">
+              <div class="ev-bar"><i></i><i></i><i></i><div class="ev-url">shoploop.store</div></div>
+              <div class="ev-body">
+                <div class="ev-header"><div class="ev-logo"></div><div class="ev-search"></div></div>
+                <div class="ev-prods">
+                  <div class="ev-prod"><div class="evp-img"></div><div class="evp-name"></div><div class="evp-price red-line"></div></div>
+                  <div class="ev-prod"><div class="evp-img"></div><div class="evp-name"></div><div class="evp-price red-line"></div></div>
+                  <div class="ev-prod"><div class="evp-img"></div><div class="evp-name"></div><div class="evp-price red-line"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wc-body">
+            <div class="wc-tags"><span class="wfm-tag web">E-Commerce</span><span class="wfm-tag">Web Dev</span></div>
+            <h4>ShopLoop</h4>
+            <p>Fashion e-commerce rebuilt from 8.2s load times to 1.1s. Revenue up 218% in 45 days, cart abandonment down 67%.</p>
+            <div class="wc-kpis">
+              <span><strong>+218%</strong> Revenue</span>
+              <span><strong>1.1s</strong> Load (was 8.2s)</span>
+              <span><strong>–67%</strong> Abandonment</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="enterprise">
+          <div class="wc-visual dash-visual">
+            <div class="dv-inner">
+              <div class="dv-sidebar"><div class="dvs-logo"></div><i class="dvs-active"></i><i></i><i></i><i></i></div>
+              <div class="dv-main">
+                <div class="dv-kpis">
+                  <div class="dv-kpi red-k"><div class="dvk-v"></div><div class="dvk-l"></div></div>
+                  <div class="dv-kpi"><div class="dvk-v"></div><div class="dvk-l"></div></div>
+                  <div class="dv-kpi red-k"><div class="dvk-v"></div><div class="dvk-l"></div></div>
+                </div>
+                <div class="dv-chart">
+                  <div class="dvc-bars">
+                    <div class="dvc-b" style="--h:42%"></div>
+                    <div class="dvc-b" style="--h:65%"></div>
+                    <div class="dvc-b" style="--h:50%"></div>
+                    <div class="dvc-b red-b" style="--h:88%"></div>
+                    <div class="dvc-b" style="--h:60%"></div>
+                    <div class="dvc-b" style="--h:72%"></div>
+                    <div class="dvc-b red-b" style="--h:95%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wc-body">
+            <div class="wc-tags"><span class="wfm-tag enterprise">Enterprise</span><span class="wfm-tag">SaaS</span></div>
+            <h4>GovTrack</h4>
+            <p>14-module procurement intelligence platform for government. 200+ daily active users across 31 states. 99.97% uptime SLA.</p>
+            <div class="wc-kpis">
+              <span><strong>200+</strong> Daily Users</span>
+              <span><strong>14</strong> Modules</span>
+              <span><strong>99.97%</strong> Uptime</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="web">
+          <div class="wc-visual brand-visual">
+            <div class="bv-inner">
+              <div class="bv-logo-block"><div class="bv-mark"></div><div class="bv-wm"><div class="bvm-n"></div><div class="bvm-t"></div></div></div>
+              <div class="bv-swatches"><div class="bvs" style="background:#1A1A2E"></div><div class="bvs" style="background:#E8B84B"></div><div class="bvs" style="background:#3D6B9A"></div><div class="bvs" style="background:#F5F5F0"></div></div>
+              <div class="bv-type"><div class="bvt-h"></div><div class="bvt-b"></div><div class="bvt-b w60"></div></div>
+            </div>
+          </div>
+          <div class="wc-body">
+            <div class="wc-tags"><span class="wfm-tag web">Brand Identity</span><span class="wfm-tag">Web Dev</span></div>
+            <h4>FleetWave</h4>
+            <p>Complete brand system for a Series A logistics startup — used to close a $4.2M funding round. Delivered in three weeks.</p>
+            <div class="wc-kpis">
+              <span><strong>$4.2M</strong> Funding Closed</span>
+              <span><strong>3 wks</strong> to Delivery</span>
+              <span><strong>12</strong> Brand Assets</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="marketing">
+          <div class="wc-visual seo-visual">
+            <div class="sv-serp">
+              <div class="sv-label">Search Results</div>
+              <div class="sv-r r-1"><span class="sv-rank">#1</span><div class="sv-rtext"><div class="svr-url"></div><div class="svr-title"></div><div class="svr-desc"></div></div></div>
+              <div class="sv-r r-dim"><div class="sv-rtext"><div class="svr-url dim"></div><div class="svr-title dim"></div></div></div>
+              <div class="sv-r r-dim"><div class="sv-rtext"><div class="svr-url dim"></div><div class="svr-title dim"></div></div></div>
+            </div>
+            <svg class="sv-chart" viewBox="0 0 160 56" fill="none">
+              <polyline points="0,52 24,46 48,36 80,22 112,10 140,5 160,2" stroke="#C41230" stroke-width="2" fill="none"/>
+              <polyline points="0,52 24,46 48,36 80,22 112,10 140,5 160,2 160,56 0,56" fill="rgba(196,18,48,0.07)" stroke="none"/>
+            </svg>
+          </div>
+          <div class="wc-body">
+            <div class="wc-tags"><span class="wfm-tag marketing">SEO</span><span class="wfm-tag">Content</span></div>
+            <h4>AgriLink Nigeria</h4>
+            <p>From page 6 to #1 on 14 commercial keywords in 90 days. 1,840% increase in organic traffic. Zero paid ads.</p>
+            <div class="wc-kpis">
+              <span><strong>#1</strong> Google (14 kws)</span>
+              <span><strong>+1,840%</strong> Organic</span>
+              <span><strong>90 days</strong> Delivery</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /work-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════ ABOUT / WHY ═══════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-left">
+          <p class="overline">Why Redline Tech</p>
+          <h2 class="section-h2">
+            Other agencies deliver work.
+            <em> We deliver outcomes.</em>
+          </h2>
+          <p class="about-body">There is no shortage of studios who will hand you a beautiful website and disappear. What is scarce — genuinely scarce — is a partner who wires every deliverable to a revenue goal and stays accountable to it. That is what Redline Tech was built to be.</p>
+          <a href="#contact" class="btn-primary">Work With Us</a>
+
+          <div class="about-stats">
+            <div class="as-item">
+              <strong>200+</strong>
+              <span>Engagements completed across 12 industries</span>
+            </div>
+            <div class="as-item">
+              <strong>$50M+</strong>
+              <span>Direct revenue attributed to our work</span>
+            </div>
+            <div class="as-item">
+              <strong>72 hrs</strong>
+              <span>Average time from strategy call to project roadmap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="differentiator-list">
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="diff-body">
+                <h4>Revenue-First Architecture</h4>
+                <p>Every project starts with a revenue target. We reverse-engineer from your goal and build every component backwards from it — not from a mood board.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="diff-body">
+                <h4>Copywriting Embedded in Every Service</h4>
+                <p>Our conversion copywriters sit beside our developers and designers. Your product's message and its design are never built in isolation.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="diff-body">
+                <h4>Data-Informed, Always</h4>
+                <p>Design decisions are backed by user psychology and market data. We ship measurable hypotheses, not opinions.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="diff-body">
+                <h4>Long-Term Partnership Model</h4>
+                <p>We don't hand off and disappear. We monitor, iterate, and optimise — because your success beyond launch is what builds our reputation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PROCESS ═══════ -->
+  <section class="section process-section" id="process">
+    <div class="container">
+      <div class="section-header-centered">
+        <p class="overline">How We Work</p>
+        <h2 class="section-h2">From first conversation<br/>to full revenue — in four phases.</h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="pc-num">01</div>
+          <h3>Discovery &amp; Strategy</h3>
+          <p>We begin with your revenue goal — not a brief. We analyse your market, map your customer journey, identify conversion gaps, and produce a strategic roadmap before any creative work begins.</p>
+          <div class="pc-duration">1–3 days</div>
+        </div>
+        <div class="process-card">
+          <div class="pc-num">02</div>
+          <h3>Design &amp; Copy</h3>
+          <p>Designers and copywriters co-create simultaneously. Every screen is designed around a conversion objective. Every word earns its space by moving the reader closer to a decision.</p>
+          <div class="pc-duration">1–2 weeks</div>
+        </div>
+        <div class="process-card">
+          <div class="pc-num">03</div>
+          <h3>Build &amp; QA</h3>
+          <p>Development is precise and tested. Every feature runs through a 40-point QA checklist — cross-device, cross-browser, performance-audited, and security-reviewed before it leaves our hands.</p>
+          <div class="pc-duration">2–6 weeks</div>
+        </div>
+        <div class="process-card">
+          <div class="pc-num">04</div>
+          <h3>Launch &amp; Optimise</h3>
+          <p>Launch is day one, not the finish line. We monitor real-user data, run iterative improvements, and optimise your conversion rate until every channel is performing at its ceiling.</p>
+          <div class="pc-duration">Ongoing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ RESULTS / TESTIMONIALS ═══════ -->
+  <section class="section results-section" id="results">
+    <div class="container">
+      <div class="section-header-centered">
+        <p class="overline">Client Results</p>
+        <h2 class="section-h2">Measured in revenue,<br/>not in compliments.</h2>
+      </div>
+
+      <div class="results-metrics">
+        <div class="rm-item">
+          <span class="rm-num">340<span class="rm-sup">%</span></span>
+          <p>Average increase in conversion rate within 90 days of launch</p>
+        </div>
+        <div class="rm-divider"></div>
+        <div class="rm-item">
+          <span class="rm-num">2.4<span class="rm-sup">×</span></span>
+          <p>Average ROI on marketing budget within the first 60 days</p>
+        </div>
+        <div class="rm-divider"></div>
+        <div class="rm-item">
+          <span class="rm-num">$50<span class="rm-sup">M+</span></span>
+          <p>Total direct revenue attributed to Redline Tech deliverables</p>
+        </div>
+      </div>
+
+      <div class="testimonials-grid">
+        <blockquote class="tq-card">
+          <div class="tq-stars" aria-label="5 stars">★★★★★</div>
+          <p>"Redline Tech didn't just build our platform — they rebuilt our entire sales process around it. We went from $40K/month to $180K/month in under four months. The results are undeniable."</p>
+          <footer>
+            <div class="tq-avatar">AO</div>
+            <div class="tq-author">
+              <strong>Adewale Okonkwo</strong>
+              <span>CEO, TradeBridge Africa</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="tq-card tq-featured">
+          <div class="tq-stars" aria-label="5 stars">★★★★★</div>
+          <p>"Every agency we hired before Redline gave us excuses. Redline gave us results. Our app launched in six weeks and hit 10,000 downloads in the first month. Their team is built different."</p>
+          <footer>
+            <div class="tq-avatar">SM</div>
+            <div class="tq-author">
+              <strong>Sarah M.</strong>
+              <span>Founder, Nuriva Health</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="tq-card">
+          <div class="tq-stars" aria-label="5 stars">★★★★★</div>
+          <p>"The copywriting alone on our landing page doubled our lead generation. We didn't change our ad budget — just the page. That's the Redline difference."</p>
+          <footer>
+            <div class="tq-avatar">JL</div>
+            <div class="tq-author">
+              <strong>James Leroy</strong>
+              <span>CMO, Vertex Financial</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CTA BAND ═══════ -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="ctab-inner">
+        <div class="ctab-left">
+          <p class="overline light-ol">The Opportunity Cost Is Real</p>
+          <h2>Every day without the right system is revenue you're not earning.</h2>
+          <p>Book a free 30-minute strategy session. No pitch. No fluff. A straight assessment of your digital infrastructure and a clear plan to fix what's costing you.</p>
+        </div>
+        <div class="ctab-right">
+          <a href="#contact" class="btn-primary btn-lg">Book Free Strategy Call</a>
+          <div class="ctab-guarantee">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M10 2L3 5v5c0 4.5 3.5 8 7 9 3.5-1 7-4.5 7-9V5l-7-3z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>No commitment. Instant value. Guaranteed.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTACT ═══════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-left">
+          <p class="overline">Start a Project</p>
+          <h2 class="section-h2">Ready to cross<br/>the <em>Redline?</em></h2>
+          <p>Submit your project brief below. Our strategy team reviews every submission personally and responds within 24 hours with a tailored proposal — never a generic quote.</p>
+
+          <div class="contact-details">
+            <div class="cd-row">
+              <div class="cd-icon">
+                <svg viewBox="0 0 20 20" fill="none"><path d="M3 8l7 5 7-5M5 5h10a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div><strong>Email</strong><span>hello@redlinetech.io</span></div>
+            </div>
+            <div class="cd-row">
+              <div class="cd-icon">
+                <svg viewBox="0 0 20 20" fill="none"><path d="M2 3h4l2 5-2.5 1.5a11 11 0 005 5L12 12l5 2v4a2 2 0 01-2 2C6.5 19 1 13.5 1 5a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div><strong>Phone / WhatsApp</strong><span>+1 (555) REDLINE</span></div>
+            </div>
+            <div class="cd-row">
+              <div class="cd-icon">
+                <svg viewBox="0 0 20 20" fill="none"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-8V6m0 4l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div><strong>Response Time</strong><span>Within 24 hours, guaranteed</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="cf-row">
+              <div class="cf-field">
+                <label for="fName">First Name <abbr title="required">*</abbr></label>
+                <input type="text" id="fName" name="firstName" placeholder="Jane" autocomplete="given-name" required />
+              </div>
+              <div class="cf-field">
+                <label for="lName">Last Name <abbr title="required">*</abbr></label>
+                <input type="text" id="lName" name="lastName" placeholder="Smith" autocomplete="family-name" required />
+              </div>
+            </div>
+            <div class="cf-field">
+              <label for="cfEmail">Business Email <abbr title="required">*</abbr></label>
+              <input type="email" id="cfEmail" name="email" placeholder="jane@company.com" autocomplete="email" required />
+            </div>
+            <div class="cf-field">
+              <label for="cfCompany">Company Name</label>
+              <input type="text" id="cfCompany" name="company" placeholder="Acme Corporation" autocomplete="organization" />
+            </div>
+            <div class="cf-row">
+              <div class="cf-field">
+                <label for="cfService">Service Needed</label>
+                <div class="select-wrap">
+                  <select id="cfService" name="service">
+                    <option value="">Select a service…</option>
+                    <option value="website">High-Converting Website</option>
+                    <option value="app">Mobile App Development</option>
+                    <option value="seo">SEO &amp; Digital Visibility</option>
+                    <option value="funnel">Sales Funnel &amp; Copywriting</option>
+                    <option value="enterprise">Enterprise Software</option>
+                    <option value="brand">Brand Identity</option>
+                    <option value="full">Full Digital Transformation</option>
+                  </select>
+                  <svg class="sel-arrow" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+              </div>
+              <div class="cf-field">
+                <label for="cfBudget">Budget Range</label>
+                <div class="select-wrap">
+                  <select id="cfBudget" name="budget">
+                    <option value="">Select a range…</option>
+                    <option value="5k-15k">$5,000 – $15,000</option>
+                    <option value="15k-50k">$15,000 – $50,000</option>
+                    <option value="50k-150k">$50,000 – $150,000</option>
+                    <option value="150k+">$150,000+</option>
+                  </select>
+                  <svg class="sel-arrow" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="cf-field">
+              <label for="cfMsg">Project Brief <abbr title="required">*</abbr></label>
+              <textarea id="cfMsg" name="message" rows="5" placeholder="Describe your project, goals, timeline, and any specific requirements…" required></textarea>
+            </div>
+            <button type="submit" class="cf-submit">
+              <span>Send Project Brief</span>
+              <svg viewBox="0 0 20 20" fill="none"><path d="M18 2L9 11M18 2l-6 16-3-7-7-3 16-6z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="cf-disclaimer">We review every submission personally. No spam. Ever.</p>
+          </form>
+
+          <div class="cf-success" id="cfSuccess">
+            <div class="cfs-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Brief received.</h3>
+            <p>Our strategy team will review your project and reply within 24 hours with a tailored plan. Big things are coming.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="ft-brand">
+          <a href="#" class="wordmark">
+            <svg class="wm-icon" viewBox="0 0 28 28" fill="none">
+              <rect width="28" height="28" rx="6" fill="#C41230"/>
+              <path d="M7 8h8a4 4 0 010 8H7V8zM7 16h6l5 4H7v-4z" fill="#fff"/>
+            </svg>
+            <span>Redline<strong>Tech</strong></span>
+          </a>
+          <p>Digital infrastructure for businesses and enterprises that refuse to be average.</p>
+          <div class="ft-socials">
+            <a href="https://linkedin.com/company/redlinetech" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M5.4 4.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM2.5 7h2.8v9.5H2.5V7zM7.5 7h2.7v1.3h.04C10.72 7.5 11.8 7 13.3 7c3 0 3.5 2 3.5 4.5v5H14V12c0-1.1 0-2.5-1.5-2.5S10.5 11 10.5 12v4.5H7.5V7z"/></svg>
+            </a>
+            <a href="https://twitter.com/redlinetech" aria-label="X / Twitter" target="_blank" rel="noopener">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M15.3 2h2.7L11.6 8.8 19 18h-5.4l-4.1-5.3L4.8 18H2l6.8-7.3L1 2h5.5l3.7 4.9L15.3 2zm-1 14.4h1.5L5.8 3.5H4.2l10.1 12.9z"/></svg>
+            </a>
+            <a href="https://instagram.com/redlinetech" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 2c-2.2 0-2.5 0-3.3.05-.8.04-1.35.16-1.83.34a3.7 3.7 0 00-1.34.87 3.7 3.7 0 00-.87 1.34c-.18.48-.3 1.03-.34 1.83C2 7.5 2 7.8 2 10s0 2.5.05 3.3c.04.8.16 1.35.34 1.83.18.5.46.94.87 1.34.4.41.84.69 1.34.87.48.18 1.03.3 1.83.34C7.5 18 7.8 18 10 18s2.5 0 3.3-.05c.8-.04 1.35-.16 1.83-.34a3.7 3.7 0 001.34-.87 3.7 3.7 0 00.87-1.34c.18-.48.3-1.03.34-1.83C18 12.5 18 12.2 18 10s0-2.5-.05-3.3c-.04-.8-.16-1.35-.34-1.83a3.7 3.7 0 00-.87-1.34 3.7 3.7 0 00-1.34-.87c-.48-.18-1.03-.3-1.83-.34C12.5 2 12.2 2 10 2zm0 1.5c2.15 0 2.41 0 3.26.05.78.04 1.2.17 1.49.28.37.14.64.32.92.6.28.28.46.55.6.92.11.28.24.7.28 1.49.04.85.05 1.1.05 3.26s0 2.41-.05 3.26c-.04.78-.17 1.2-.28 1.49-.14.37-.32.64-.6.92-.28.28-.55.46-.92.6-.28.11-.7.24-1.49.28-.85.04-1.1.05-3.26.05s-2.41 0-3.26-.05c-.78-.04-1.2-.17-1.49-.28a2.2 2.2 0 01-.92-.6 2.2 2.2 0 01-.6-.92c-.11-.28-.24-.7-.28-1.49C3.5 12.41 3.5 12.16 3.5 10s0-2.41.05-3.26c.04-.78.17-1.2.28-1.49.14-.37.32-.64.6-.92.28-.28.55-.46.92-.6.28-.11.7-.24 1.49-.28C7.59 3.5 7.84 3.5 10 3.5zm0 2.5a4 4 0 100 8 4 4 0 000-8zm0 1.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zm4.15-.8a.95.95 0 100 1.9.95.95 0 000-1.9z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="ft-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Mobile Apps</a></li>
+            <li><a href="#services">SEO &amp; Visibility</a></li>
+            <li><a href="#services">Sales Funnels</a></li>
+            <li><a href="#services">Enterprise Software</a></li>
+            <li><a href="#services">Brand Identity</a></li>
+          </ul>
+        </div>
+
+        <div class="ft-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#work">Case Studies</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#contact">Careers</a></li>
+            <li><a href="#contact">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="ft-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@redlinetech.io">hello@redlinetech.io</a></li>
+            <li><a href="tel:+15553353546">+1 (555) REDLINE</a></li>
+            <li><a href="#contact">Book a Strategy Call</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Redline Tech Ltd. All rights reserved.</p>
+        <div class="fb-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
